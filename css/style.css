@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
-    font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 body {
-  margin: 0px;
+  margin: 0px auto;
 }
 
-header.header{
-    display: flex;
-    align-items: center;
-    
+header.header {
+  display: flex;
+  align-items: center;
 }
 
 header.header img {
@@ -27,24 +26,110 @@ section.top-page {
 
 /* page de bienvenue (landing page) */
 
-.big-title{
-    color: white;
-    font-size: 80px;
-    padding: 20px 50px;
-    font-family: 'Abril FatFace';
-
+.landing-page {
+  padding: 20px 50px;
 }
 
+.big-title {
+  color: white;
+  font-size: 80px;
+  font-family: "Abril FatFace", cursive;
+  font-weight: 100;
+}
+
+.scroll-down {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 160px;
+}
 
 /* ************menu navigation************** */
-nav.nav{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 400px;
-    margin-left: 30px;;
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 400px;
+  margin-left: 30px;
 }
 
-nav.nav li{
-    color: white;
+nav.nav li {
+  color: white;
+}
+
+/* *********************services******************************* */
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delivery-icon {
+  font-size: 50px;
+  color: #add981;
+}
+
+.service-detail {
+  font-weight: 600;
+  width: 200px;
+  text-align: center;
+}
+
+/* ************************best items *****************************/
+
+.section-title {
+  font-size: 50px;
+  font-family: "Abril FatFace", cursive;
+  font-weight: 100;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  background-color: #add981;
+  width: 50px;
+  height: 7px;
+  bottom: 0;
+}
+
+.best-items {
+  margin: 100px
+}
+
+.best-plants {
+  display: flex;
+  background-color: red;
+  min-height: 500px;
+  flex-wrap: wrap;
+}
+
+.plant-box {
+  background-size: cover;
+  background-position: center;
+  min-width: 350px;
+  height: 500px;
+  flex: 1;
+}
+
+.plant1 {
+  background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+.plant2 {
+  background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3 {
+  background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+.plant4 {
+  background-image: url(../images/nos_meilleures_ventes/4.jpg);
 }
